@@ -81,10 +81,10 @@ Output sub-directories are created automatically on demand
 | # | Notebook | What it does | Key package imports |
 |---|----------|--------------|---------------------|
 | 01 | `01_join_tif_elevation` | Merge DEM tiles, zonal stats per HUC6 watershed, split into elevation classes | `io.load_basin_data` |
-| 02 | `02_Combine_CaSR_data` | Clip CaSR SWE + precip to Alberta, tag grids with elevation class, write per-year CSVs | `io.load_basin_data`, `io.load_nc_data` |
-| 03 | `03_SWEI` | 8-month SWEI (Standardized SWE Index); flag SWEI drought years | `indices.compute_swei`, `seasonal.select_seasonal_data`, `plotting.plot_index_heatmap` |
-| 04 | `04_SPI` | 8-month SPI (Standardized Precipitation Index) | `indices.spi_pipeline`, `plotting.plot_index_heatmap` |
-| 05 | `05_SD_classification_clean_workflow` | Two-stage classification: SWEI detects drought years, k-means types them (Warm / Dry / Warm & Dry) | `classification.*`, `plotting.plot_classification_*` |
+| 02 | `02_Combine_CaSR_data` | Clip CaSR SWE + precip to the watershed, tag grids with elevation class, write per-year CSVs | `io.load_basin_data`, `io.load_nc_data` |
+| 03 | `03_Calculate_SWEI` | Calcualtes SWEI (Standardized SWE Index) for required number of months; flag SWEI drought years | `indices.compute_swei`, `seasonal.select_seasonal_data`, `plotting.plot_index_heatmap` |
+| 04 | `04_Calculate_SPI` | Calculated SPI (Standardized Precipitation Index) for required number of months; flag SWEI drought years| `indices.spi_pipeline`, `plotting.plot_index_heatmap` |
+| 05 | `05_SD_classification` | Snow drought classification: Classifies identified snow drought years using k-means clustering (Warm / Dry / Warm & Dry) | `classification.*`, `plotting.plot_classification_*` |
 
 ### Method (notebook 05)
 
