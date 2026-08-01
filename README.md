@@ -6,13 +6,13 @@ A Python framework for assessing and analysing snow drought.
 > changing to milder, warmer conditions - a transition that underlies many
 > warm snow droughts.
 
-The project name was choosen to acknowledge the land where the traditional territories
+The project name was choosen to acknowledge the land of the traditional territories
 of the Blackfoot Confederacy, Stoney Nakoda Nations, Tsuu T'ina Nation, and the
-Métis Nation of Alberta.
+Métis Nation of Alberta, where the study been developed.
 
 ---
 
-SOYINI identifies and classifies snow droughts in the Bow River Basin, Alberta, Canada from the
+SOYINI identifies, classifies and assess snow droughts using the Bow River Basin, Alberta, Canada as a case study, from the
 data obatin from Canadian Surface Reaanalysis v3.2 [CaSR](https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/download_CaSR_regions_var_period.html) dataset (snow-water-equivalent (SWE) + 24hr precipitation), combined with [CanSWEv7](https://doi.org/10.5281/zenodo.4734371)  historic SWE dataset.
 
 The scientific narrative and step-by-step orchestration live in the
